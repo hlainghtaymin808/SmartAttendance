@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartAttend Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="brandBtn" aria-label="SmartAttend home">
+      <span class="logo">S</span>
+      <div>
+        <strong>SmartAttend</strong>
+        <small>Attendance prototype</small>
+      </div>
+    </button>
+
+    <div class="role-switch" role="group" aria-label="Switch demo role">
+      <button data-role="lecturer" class="role active">Lecturer</button>
+      <button data-role="student" class="role">Student</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
